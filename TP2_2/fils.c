@@ -5,6 +5,13 @@
 #include <sys/wait.h>
 
 int main(int argc, char const *argv[]) {
-  printf("Je suis le fils !!!\n");
+  pid_t pidCourant;
+  int i;
+
+  pidCourant=getpid();
+  printf("Mon pid de fils est : %d\n",pidCourant);
+  for(i=0;i<5;i++){
+    printf("Fils au travail !\n");
+  }
   return 0;
 }

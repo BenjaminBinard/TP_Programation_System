@@ -7,7 +7,7 @@
 int main(int argc, char const *argv[]) {
   pid_t pidCourant;
   pidCourant=getpid();
-  printf("Mon pid est : %d\n",pidCourant);
+  printf("Mon pid de père est : %d\n",pidCourant);
   sleep(5);
   printf("Travail du père terminé !\n");
   return 0;
